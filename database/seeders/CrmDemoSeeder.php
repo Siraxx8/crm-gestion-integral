@@ -10,8 +10,8 @@ class CrmDemoSeeder extends Seeder
     public function run(): void
     {
         // 1. Asesores
-        foreach (['Ana Rodríguez', 'Carlos Pérez', 'María González'] as $name) {
-            DB::table('users_simple')->insert([
+        foreach (['José Sira','Ana Rodríguez', 'Carlos Pérez', 'María González'] as $name) {
+            DB::table('user_simple')->insert([
                 'name' => $name,
                 'email' => strtolower(str_replace(' ', '.', $name)) . '@crm.com',
                 'created_at' => now(),
